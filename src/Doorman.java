@@ -43,6 +43,4 @@ public class Doorman {
 
         return queue.length;
     }
-
-
 }

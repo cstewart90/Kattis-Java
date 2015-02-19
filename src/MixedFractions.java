@@ -25,6 +25,5 @@ public class MixedFractions {
             System.out.println(String.format("%d %d / %d", whole, numerator, denominator));
         }
         io.close();
-
     }
 }

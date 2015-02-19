@@ -25,6 +25,5 @@ public class Kemija {
             System.out.println(sentence);
         }
         scanner.close();
-
     }
 }
