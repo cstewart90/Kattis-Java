@@ -27,10 +27,16 @@
  * @author: Kattis
  */
 
-import java.io.*;
 import java.util.StringTokenizer;
+import java.io.BufferedReader;
+import java.io.BufferedOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.io.OutputStream;
 
-class Kattio extends PrintWriter {
+public class Kattio extends PrintWriter {
     private BufferedReader r;
     private String line;
     private StringTokenizer st;
@@ -66,6 +72,20 @@ class Kattio extends PrintWriter {
         return nextToken();
     }
 
+    public String getLine() throws IOException {
+        if (line != null) {
+            try {
+                String tmp = line;
+                line = r.readLine();
+                return tmp;
+            } catch (IOException e) {
+
+            }
+        }
+
+        return null;
+    }
+
     private String peekToken() {
         if (token == null)
             try {
@@ -75,8 +95,7 @@ class Kattio extends PrintWriter {
                     st = new StringTokenizer(line);
                 }
                 token = st.nextToken();
-            } catch (IOException e) {
-            }
+            } catch (IOException e) { }
         return token;
     }
 
