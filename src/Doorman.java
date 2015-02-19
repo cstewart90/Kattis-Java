@@ -1,3 +1,7 @@
+/**
+ * https://open.kattis.com/problems/doorman
+ */
+
 public class Doorman {
     public static void main(String[] args) {
         Doorman doorman = new Doorman();

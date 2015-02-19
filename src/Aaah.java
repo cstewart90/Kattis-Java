@@ -1,3 +1,7 @@
+/**
+ * https://open.kattis.com/problems/aaah
+ */
+
 public class Aaah {
     public static void main(String[] args) {
         Aaah aah = new Aaah();
@@ -11,7 +15,7 @@ public class Aaah {
             String a = io.getWord();
             String b = io.getWord();
 
-            io.println(b.length() > a.length() ? "no" : "go");
+            System.out.println(b.length() > a.length() ? "no" : "go");
         }
         io.close();
     }

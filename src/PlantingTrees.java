@@ -1,3 +1,7 @@
+/**
+ * https://open.kattis.com/problems/plantingtrees
+ */
+
 import java.util.Arrays;
 
 public class PlantingTrees {
@@ -41,7 +45,7 @@ public class PlantingTrees {
                     max = days;
                 }
             }
-            io.println(max + 1);
+            System.out.println(max + 1);
         }
         io.close();
     }

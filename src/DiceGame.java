@@ -1,3 +1,7 @@
+/**
+ * https://open.kattis.com/problems/dicegame
+ */
+
 public class DiceGame {
     public static void main(String[] args) {
         DiceGame diceGame = new DiceGame();
@@ -21,11 +25,11 @@ public class DiceGame {
             double Emma = average(a3, b3) + average(a4, b4);
 
             if (Gunnar > Emma) {
-                io.println("Gunnar");
+                System.out.println("Gunnar");
             } else if (Emma > Gunnar) {
-                io.println("Emma");
+                System.out.println("Emma");
             } else {
-                io.println("Tie");
+                System.out.println("Tie");
             }
         }
         io.close();
