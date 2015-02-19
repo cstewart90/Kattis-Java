@@ -2,15 +2,13 @@
  * https://open.kattis.com/problems/carrots
  */
 
-import java.io.IOException;
-
 public class Carrots {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Carrots carrots = new Carrots();
         carrots.run();
     }
 
-    private void run() throws IOException {
+    private void run() {
         Kattio io = new Kattio(System.in);
 
         while (io.hasMoreTokens()) {

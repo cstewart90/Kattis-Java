@@ -72,14 +72,11 @@ public class Kattio extends PrintWriter {
         return nextToken();
     }
 
-    public String getLine() throws IOException {
-        if (line != null) {
-            String tmp = line;
+    public String getLine() {
+        try {
             line = r.readLine();
-            return tmp;
-        }
-
-        return null;
+        } catch (IOException e) { }
+        return line;
     }
 
     private String peekToken() {
