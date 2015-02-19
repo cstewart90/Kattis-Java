@@ -74,13 +74,9 @@ public class Kattio extends PrintWriter {
 
     public String getLine() throws IOException {
         if (line != null) {
-            try {
-                String tmp = line;
-                line = r.readLine();
-                return tmp;
-            } catch (IOException e) {
-
-            }
+            String tmp = line;
+            line = r.readLine();
+            return tmp;
         }
 
         return null;
