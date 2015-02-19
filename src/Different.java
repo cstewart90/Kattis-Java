@@ -1,6 +1,7 @@
 /**
  * https://open.kattis.com/problems/different
  */
+
 public class Different {
     public static void main(String[] args) {
         Different different = new Different();
