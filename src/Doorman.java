@@ -9,7 +9,7 @@ public class Doorman {
     }
 
     private void run() {
-        Kattio io = new Kattio(System.in, System.out);
+        Kattio io = new Kattio(System.in);
 
         while (io.hasMoreTokens()) {
             int maxDifference = io.getInt();

@@ -27,7 +27,7 @@ public class PlantingTrees {
     }
 
     private void run() {
-        Kattio io = new Kattio(System.in, System.out);
+        Kattio io = new Kattio(System.in);
 
         while (io.hasMoreTokens()) {
             int[] trees = new int[io.getInt()];

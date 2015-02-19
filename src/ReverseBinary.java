@@ -9,7 +9,7 @@ public class ReverseBinary {
     }
 
     private void run() {
-        Kattio io = new Kattio(System.in, System.out);
+        Kattio io = new Kattio(System.in);
 
         while (io.hasMoreTokens()) {
             int decimal = io.getInt();

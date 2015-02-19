@@ -9,7 +9,7 @@ public class DiceGame {
     }
 
     private void run() {
-        Kattio io = new Kattio(System.in, System.out);
+        Kattio io = new Kattio(System.in);
 
         while (io.hasMoreTokens()) {
             double a1 = io.getInt();

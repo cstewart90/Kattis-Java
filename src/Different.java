@@ -8,7 +8,7 @@ public class Different {
     }
 
     private void run() {
-        Kattio io = new Kattio(System.in, System.out);
+        Kattio io = new Kattio(System.in);
 
         while (io.hasMoreTokens()) {
             long n1 = io.getLong();
