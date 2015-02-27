@@ -1,8 +1,8 @@
-import java.util.Scanner;
-
 /**
  * https://open.kattis.com/problems/kemija08
  */
+
+import java.util.Scanner;
 
 public class Kemija {
     public static void main(String[] args) {
@@ -27,3 +27,4 @@ public class Kemija {
         scanner.close();
     }
 }
+
